@@ -1,0 +1,92 @@
+button {
+    align-items: var(--button_align-items, center);
+    background-color: var(--button_background-color, transparent);
+    border-color: var(--button_border-color, hsla(0, 0%, 100%, 1));
+    border-style: var(--button_border-style, solid);
+    border-radius: var(--button_border-radius, 2rem);
+    border-width: var(--button_border-width, 2px);
+    color: var(--button_color, hsla(0, 0%, 100%, 1));
+    cursor: var(--button_cursor, pointer);
+    display: var(--button_display, flex);
+    font-family: var(--button_font-family, 'Gotham Bold');
+    font-size: var(--button_font-size, .875rem);
+    gap: var(--button_gap, 1rem);
+    justify-content: var(--button_justify-content, center);
+    letter-spacing: var(--button_letter-spacing, .03rem);
+    line-height: var(--button_line-height, 1.1rem);
+    max-width: var(--button_max-width, auto);
+    padding: var(--button_padding, 1rem 2rem);
+    text-align: var(--button_text-align, center);
+    text-transform: var(--button_text-transform, uppercase);
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+button,
+button * {
+    -webkit-transition: var(--button_anime-property, all) var(--button_anime-time, .3s) var(--button_anime-function, ease-in-out);
+    -moz-transition: var(--button_anime-property, all) var(--button_anime-time, .3s) var(--button_anime-function, ease-in-out);
+    -ms-transition: var(--button_anime-property, all) var(--button_anime-time, .3s) var(--button_anime-function, ease-in-out);
+    -o-transition: var(--button_anime-property, all) var(--button_anime-time, .3s) var(--button_anime-function, ease-in-out);
+    transition: var(--button_anime-property, all) var(--button_anime-time, .3s) var(--button_anime-function, ease-in-out);
+}
+
+button:hover {
+    --button_background-color: var(--button_background-color_hover, hsla(0, 0%, 100%, 1));
+    --button_color: var(--button_color_hover, var(--color-black));
+}
+
+/* ICON */
+button svg {
+    fill: var(--button_svg_fill, none);
+    max-width: var(--button_svg_max-width, 20px);
+}
+
+button path {
+    fill: var(--button_path_fill, hsla(0, 0%, 100%, 1));
+}
+
+button:hover path {
+    --button_path_fill: var(--color-black);
+}
+
+/* BUTTON PRIMARY */
+button.primary {
+    --button_background-color: var(--color-primary);
+    --button_border-color: var(--color-primary);
+}
+
+button.primary:hover {
+    --button_background-color: var(--color-primary_state);
+    --button_border-color: var(--color-primary_state);
+    --button_color: hsla(0, 0%, 100%, 1);
+}
+
+button.primary:hover path {
+    --button_path_fill: hsla(0, 0%, 100%, 1);
+}
+
+/* DISABLED */
+button:disabled {
+    --button_background-color: var(--color-grey);
+    --button_border-color: var(--color-grey);
+    --button_color: hsla(0, 0%, 100%, .5);
+    --button_cursor: not-allowed;
+}
+
+button:disabled:hover {
+    --button_background-color: var(--color-grey);
+    --button_border-color: var(--color-grey);
+}
+
+button:disabled:hover path {
+    --button_path_fill: hsla(0, 0%, 100%, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        --button_font-family: 'Gotham Medium';
+        --button_font-size: .75rem;
+        --button_padding: .8rem 1.2rem;
+    }
+}

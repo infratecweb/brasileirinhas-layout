@@ -1,0 +1,7 @@
+[anime] {
+    -webkit-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    -moz-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    -ms-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    -o-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+}

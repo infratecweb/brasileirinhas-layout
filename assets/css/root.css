@@ -1,0 +1,11 @@
+:root {
+    /* FONT */
+    --font-family: 'Gotham Book';
+
+    /* COLORS */
+    --color-primary: hsla(335, 85%, 50%, 1);
+    --color-primary_state: hsla(335, 85%, 40%, 1);
+    --color-black: hsla(0, 0%, 0%, 1);
+    --color-grey: rgb(49, 53, 66);
+    --color-grey_clear: hsla(0, 0%, 78%, 1);
+}

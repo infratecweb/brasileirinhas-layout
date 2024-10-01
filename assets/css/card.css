@@ -1,0 +1,118 @@
+:root {
+    --card-space-elements: 1rem;
+}
+
+.card,
+.card * {
+    --anime-time: .4s;
+    -webkit-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    -moz-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    -ms-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    -o-transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+    transition: var(--anime-property, all) var(--anime-time, .3s) var(--anime-function, ease-in-out);
+}
+
+.card {
+    border-radius: .5rem;
+    height: 100vh;
+    max-height: 350px;
+    max-width: 274px;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 0 20px 4px var(--color-black);
+    box-shadow: 0 0 20px 4px var(--color-black);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.card img {
+    filter: grayscale(0%);
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 1.8s ease;
+    width: 100vw;
+}
+
+.card:hover img {
+    filter: grayscale(100%);
+    transition: all 4s ease;
+}
+
+.card .txt {
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0, .9) 64%);
+    bottom: -100%;
+    left: 0;
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.card:hover .txt {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card .txt p {
+    color: hsla(0, 0%, 100%, 1);
+    font-family: 'Gotham Bold';
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, .8);
+}
+
+.card[flag]::before {
+    background-color: var(--color-primary);
+    -webkit-box-shadow: 0 0 20px 4px hsla( 0, 0%, 0%, .3);
+    box-shadow: 0 0 20px 4px hsla( 0, 0%, 0%, .3);
+    color: hsla(0, 0%, 100%, 1);
+    content: attr(flag);
+    font-family: 'Gotham Medium';
+    font-size: .8rem;
+    padding: 2.6rem 2.6rem .6rem 2.6rem;
+    position: absolute;
+    top: -.8rem;
+    -moz-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    left: -3rem;
+    z-index: 3;
+}
+
+.card[flag="Exclusivo"]::before {
+    background-color: hsla(52, 100%, 57%, 1);
+    color: var(--color-black)
+}
+
+.card[movie]::after {
+    color: hsla(0, 0%, 100%, 1);
+    content: url('data:image/svg+xml,<svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z" fill="%23ffffff"/></svg>');
+    font-family: 'Gotham Bold';
+    font-size: .8rem;
+    opacity: .7;
+    padding: .4rem;
+    position: absolute;
+    top: var(--card-space-elements, 1rem);
+    right: var(--card-space-elements, 1rem);
+    z-index: 3;
+}
+.card[movie]:hover::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+   
+}

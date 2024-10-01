@@ -1,0 +1,19 @@
+/* CONFIG */
+@import url(./root.css);
+
+/* FONTS */
+@import url(./fonts.css);
+
+/* RESET */
+@import url(./reset.css);
+
+/* ANIMATIONS */
+@import url(./anime.css);
+
+/* LIBRARY */
+@import url(./owl.carousel.min.css);
+
+/* COMPONENT */
+@import url(./button.css);
+@import url(./card.css);
+@import url(./gallery.css);
