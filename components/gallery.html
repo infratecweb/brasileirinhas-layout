@@ -61,238 +61,256 @@
           },
         }
         </script>
+
+      <style>
+        .container-center {
+          max-width: 1366px;
+          width: 100vw;
+        }
+
+        @media screen and (max-width: 1366px) {
+          .container-center {
+            max-width: 100%;
+          }
+        }
+      </style>
 </head>
-<body style="background-color: var(--color-black);">
+<body style="display: grid; place-items: center; background-color: var(--color-black);">
 
-<div class="owl-carousel-container">
-  <div class="gallery owl-carousel" data-gallery="1">
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
-  
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
 
-    <div class="card" flag="Exclusivo">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+<div class="container-center">
+  <div class="owl-carousel-container">
+    <div class="gallery owl-carousel" data-gallery="1">
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Exclusivo">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card" flag="Gratuito">
-      <a href="#">
-        <picture>
-          <!-- Imagem para telas de alta densidade (ex.: Retina) -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
-          
-          <!-- Imagem para tablets ou telas medianas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
-          
-          <!-- Imagem para smartphones ou telas pequenas -->
-          <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
-          
-          <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
-          <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
-        </picture>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
   
-        <div class="txt">
-          <p>Bastidores Verão: Dia 1</p>
-        </div>
-      </a>
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
+  
+      <div class="card" flag="Gratuito">
+        <a href="#">
+          <picture>
+            <!-- Imagem para telas de alta densidade (ex.: Retina) -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 1200px)">
+            
+            <!-- Imagem para tablets ou telas medianas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(min-width: 768px)">
+            
+            <!-- Imagem para smartphones ou telas pequenas -->
+            <source srcset="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" media="(max-width: 767px)">
+            
+            <!-- Imagem padrão caso nenhuma das condições anteriores seja atendida -->
+            <img src="https://fs.fpass.com.br/aa2ab1c6-4eb5-4ca2-ac20-627846cb9867_97e4247afdca6789b46c4c6725e3f37006717b7a.webp" alt="Descrição da imagem">
+          </picture>
+    
+          <div class="txt">
+            <p>Bastidores Verão: Dia 1</p>
+          </div>
+        </a>
+      </div>
     </div>
+    <button class="prev-gallery" data-gallery="1">
+      <svg height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"/></svg>
+    </button>
+    <button class="next-gallery" data-gallery="1">
+      <svg  height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"/></svg>
+    </button>
   </div>
-  <button class="prev-gallery" data-gallery="1">
-    <svg height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"/></svg>
-  </button>
-  <button class="next-gallery" data-gallery="1">
-    <svg  height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"/></svg>
-  </button>
 </div>
+
 
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/owl.carousel.min.js"></script>
