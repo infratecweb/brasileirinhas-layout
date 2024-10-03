@@ -35,8 +35,37 @@
     right: 0;
 }
 
+.content-gallery {}
+
+.content-gallery header {
+    align-items: center;
+    display: flex;
+    gap: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.content-gallery .content-header {
+    display: flex;
+    flex-direction: column;
+    gap: .825rem;
+}
+
+.content-gallery .content-header a {
+    color: var(--color-primary);
+    font-family: 'Gotham Bold';
+    font-size: 0.875rem;
+}
+
+.content-gallery .content-header a:hover {
+    color: var(--color-primary_state);
+}
+
 @media only screen and (max-width: 768px) {
     .owl-carousel-container button {
         display: none!important;
+    }
+
+    .content-gallery .content-header a {
+        font-size: 0.725rem;
     }
 }
