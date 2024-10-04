@@ -16,7 +16,11 @@
 /* LIBRARY */
 @import url(./owl.carousel.min.css);
 
+/* STRUCTURE */
+@import url(./structure.css);
+
 /* COMPONENT */
 @import url(./button.css);
 @import url(./card.css);
 @import url(./gallery.css);
+@import url(./footer.css);

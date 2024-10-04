@@ -1,0 +1,50 @@
+footer {
+    max-width: 100%;
+    width: 100vw;
+}
+
+footer .copy {
+    align-items: center;
+    background-color: var(--color-grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.txt-copy {
+    align-items: center;
+    display: flex;
+}
+
+.txt-copy p {
+    --p-font-size: 0.75rem;
+}
+
+.social-list {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.social-list a:hover {
+    opacity: .8;
+}
+
+.social-list svg {
+    fill: #FFFFFF;
+    max-width: 20px;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .txt-copy {
+        order: 2;
+    }
+    
+    .txt-copy,
+    .social-list {
+        justify-content: center;
+    }
+}
