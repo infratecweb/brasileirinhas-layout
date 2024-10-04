@@ -3,9 +3,46 @@ footer {
     width: 100vw;
 }
 
+footer > .container {
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+footer img {
+    max-width: 180px;
+}
+
+.logo-footer {
+    align-items: center;
+    display: flex;
+}
+
+.menu-footer {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer nav a {
+    color: hsla(0, 0%, 100%, .8);
+    font-size: .8rem;
+}
+
+footer nav a:hover {
+    color: hsla(0, 0%, 100%, 1);
+}
+
 footer .copy {
     align-items: center;
-    background-color: var(--color-grey);
+    background-color: hsla(0, 0%, 3%, 1);
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -42,9 +79,15 @@ footer .copy {
     .txt-copy {
         order: 2;
     }
-    
+
+    footer nav {
+        gap: 1rem;
+    }
+
     .txt-copy,
-    .social-list {
+    .social-list,
+    .menu-footer,
+    .logo-footer {
         justify-content: center;
     }
 }
