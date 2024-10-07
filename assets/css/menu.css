@@ -1,0 +1,40 @@
+.menu {
+    padding: 1.6rem 0;
+}
+
+.logo-menu {
+    display: flex;
+}
+
+.list-logos {
+    display: flex;
+}
+
+.list-logos img {
+    max-width: 160px;
+}
+
+.list-menu {
+    display: flex;
+}
+
+.list-menu a {
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.list-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.list-buttons button {
+    --button-padding: .8rem 1.2rem;
+    min-width: 190px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .list-buttons button {
+        min-width: auto;
+    }
+}
