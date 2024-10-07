@@ -3,23 +3,39 @@
 }
 
 .logo-menu {
+    align-items: center;
     display: flex;
+    gap: 2rem;
 }
 
 .list-logos {
+    align-items: center;
     display: flex;
+    gap: 1rem;
 }
 
 .list-logos img {
-    max-width: 160px;
+    max-width: 150px;
+}
+
+.list-logos picture:nth-child(2) {
+    border-left: 1px solid hsla(0, 0%, 100%, .4);
+    padding-left: 1rem;
 }
 
 .list-menu {
+    align-items: center;
     display: flex;
+    gap: 1.4rem;
 }
 
 .list-menu a {
     color: hsla(0, 0%, 100%, .8);
+    font-family: 'Gotham Medium';
+}
+
+.list-menu a:hover {
+    color: hsla(0, 0%, 100%, 1);
 }
 
 .list-buttons {
@@ -28,13 +44,16 @@
 }
 
 .list-buttons button {
+    --button_font-size: .8rem;
     --button-padding: .8rem 1.2rem;
-    min-width: 190px;
-    width: auto;
 }
 
 @media (max-width: 768px) {
     .list-buttons button {
         min-width: auto;
+    }
+
+    .list-menu {
+        display: none;
     }
 }
